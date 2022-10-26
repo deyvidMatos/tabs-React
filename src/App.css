@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body{
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 22%, rgba(226,226,226,1) 47%, rgba(239,239,255,1) 72%, rgba(212,212,212,1) 99%);
 }
-
-.App-link {
-  color: #61dafb;
+.loading{
+  font-size: 3rem;
+  color: #2caeba;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
+.circle{
+  margin: 70px auto;
+  width: 40px;
+  height: 40px;
+  border: solid 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border-top-color: rgba(0, 0, 0, 0);
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100%{
     transform: rotate(360deg);
+  }
+}
+.title{
+  margin: 2%;
+  font-size: 2rem;
+}
+.underline{
+  padding: 5px 30px;
+  background: linear-gradient(90deg, rgba(239,239,255,0) 0%, rgba(44,174,186,1) 50%, rgba(212,212,212,0) 100%);
+}
+.jobs-center{
+  height: 60%;
+  width: 50%;
+  padding: 2%;
+  border-radius: 15px;
+  background: linear-gradient(0deg, rgba(44,174,186,0.10) 0%, rgba(47,190,203,0.10) 13%, rgba(31,128,136,0.10) 32%, rgba(44,174,186,0.10) 50%, rgba(49,196,209,0.10) 67%, rgba(36,143,153,0.10) 83%, rgba(44, 174, 186, 0.10) 100%);
+}
+.btn-container{
+  margin: 2%;
+}
+.job-btn{
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: solid 3px transparent;
+  background-color: transparent;
+}
+.job-btn.active-btn{
+  border-bottom: solid 3px #2caeba;
+}
+.job-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.job-info h3{
+  font-size: 1.5rem;
+}
+.job-info h4{
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px;
+  color: #3e5f7e;
+  background-color: #c2c8cf;
+}
+.job-date{
+  font-size: 1.3rem;
+}
+.job-desc{
+  display: flex;
+  gap: 10px;
+}
+.job-desc .job-icon path{
+  color: #2caeba;
+}
+@media (max-width:800px) {
+  .jobs-center{
+    width: 90%;
+  }
+}
+@media (max-width:410px) {
+  .jobs-center{
+    width: 100%;
+    height: 80%;
   }
 }
