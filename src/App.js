@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaAngleDoubleRight } from 'react-icons/fa';
+import ToHome from './components/toHome.js'
+
 import './App.css';
 
 function App() {
@@ -56,6 +58,7 @@ function App() {
           })}
         </article>
       </div>
+      <ToHome/>
     </section>
     )
 }
