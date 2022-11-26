@@ -16,7 +16,7 @@ De uma olhada no meu trabalho 🐱‍🏍
 ---
 
 ## Funcionamento 🔎
-Ao acessar a pagina, podera pesquizar as especies de Star Wars
+Ao acessar a pagina, sera possivel mudar o conteudo clicando nos outros nomes
 ![image](https://github.com/deyvidMatos/landing-page/blob/main/image/reactTab.png)
 
 ---
